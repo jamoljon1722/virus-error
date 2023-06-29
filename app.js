@@ -41,20 +41,13 @@ btn.addEventListener("click", ()=> {
                 let audio = new Audio(audioName)
                 audio.play();
             }
-            Sound("watching.MP3")
-        }
-
-        if(a == -18) {
-            function Sound(audioName) {
-                let audio = new Audio(audioName)
-                audio.play();
-            }
             Sound("error sound.MP3")
         }
-
-        if(a == -12) {
+        
+        if(a == -18) {
             window.close()
         }
+        
     },1000)
     
     setInterval(() => {  
