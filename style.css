@@ -86,3 +86,11 @@ h4 {
     width: 100%;
     height: 200vh;
 }
+
+.error {
+    display: none;
+}
+
+.error-open {
+    display: block;
+}

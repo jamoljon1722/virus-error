@@ -2,12 +2,14 @@ const btn = document.querySelector(".btn");
 const text = document.querySelector("h2");
 const text4 = document.querySelector("h4")
 const background = document.querySelector(".container");
-const box = document.querySelector(".all-box")
+const box = document.querySelector(".all-box");
+const error = document.querySelector(".error")
 
 btn.addEventListener("click", ()=> {
     text.style.display = "block"
     background.classList.toggle("orqa-fon")
     box.style.display = "none"
+    error.classList.add("error-open")
     
     function playSound(audioName) {
         let audio = new Audio(audioName)
