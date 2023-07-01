@@ -7,6 +7,10 @@
     box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+    display: none;
+}
+
 .all-box {
     background: linear-gradient(to right, #FFC371, #FF5F6D);
     background-size: cover;

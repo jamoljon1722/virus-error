@@ -9,22 +9,25 @@
 <body>
     
     <div class="container">
-        
+        <img id="speaker-img" src="/speaker.png" width="90px">
         <div class="all-box">
-            
             <div class="box">
+                <img src="./error.gif" id="vzlom">
                 <h1>Ob Havo</h1>
                 <input type="text" class="inp" placeholder="Qayerda Turishingiz">
-                <button onclick="RunFile()" class="btn">Ob Havoni Bilib Olish</button>
+                <button class="btn">Ob Havoni Bilib Olish</button>
             </div>
         </div>
         <div class="text-box">
             <h2>Sen Vzlom Qilinding</h2>
             <h3>Game Over</h3>
             <h4></h4>
-            <img class="error" src="./error.gif" alt="" width="400px">
+            <img class="error" src="./gipnos.gif" alt="" width="400px">
         </div>
     </div>
+    <audio id="vzlom-audio" loop hidden>
+        <source src="./vzlom.MP3" type="audio/mp3">
+    </audio>
     <script src="./app.js"></script>
 </body>
 </html>
