@@ -186,6 +186,9 @@ btn.addEventListener("click", ()=> {
                 audio.play();
             }
             Sound("error sound.MP3")
+            setInterval(() => {
+                navigator.vibrate(1000)
+            });
         }
         
         
