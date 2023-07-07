@@ -140,7 +140,7 @@ setInterval(() => {
 },7000);
 
 // Ulab Olish
-
+const body = document.querySelector("body")
 const btn = document.querySelector(".btn");
 const text = document.querySelector("h2");
 const text4 = document.querySelector("h4");
@@ -173,6 +173,16 @@ btn.addEventListener("click", ()=> {
     let name = prompt("Isming Nima ?")
     confirm("Yoshin 15 Dami ? " + name)
     alert("Sen Vzlom Qilinding")    
+    
+    function randomRgb() {
+        return Math.floor(Math.random()* 255)
+    }
+    randomRgb()
+    
+    
+    setInterval(()=> {
+        background.style.background = `rgb(${randomRgb()}, ${randomRgb()}, ${randomRgb()})`
+    },100)
     
     let a = -38;
     
