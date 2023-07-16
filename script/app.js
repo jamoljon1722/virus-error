@@ -3,19 +3,15 @@ setInterval(() => {
     
     function musicPlay() {
         var audio = document.getElementById('vzlom-audio');
-        var micon = document.getElementById('speaker-img');
         
         micon.addEventListener('click', musicPlay);
         
         if (audio.duration > 0 && audio.paused) {
             audio.play();
-            micon.src = "speaker.png";
         }
         else {
             audio.pause();
             audio.currentTime = 0;
-            
-            micon.src = "speaker.png";
         }
         
         document.removeEventListener('click', musicPlay);
