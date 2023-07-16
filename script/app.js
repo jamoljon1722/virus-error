@@ -2,8 +2,8 @@ setInterval(() => {
     document.addEventListener('click', musicPlay);
     
     function musicPlay() {
-        let audio = document.getElementById('vzlom-audio');
-        let micon = document.getElementById('speaker-img');
+        var audio = document.getElementById('vzlom-audio');
+        var micon = document.getElementById('speaker-img');
         
         micon.addEventListener('click', musicPlay);
         
@@ -21,7 +21,7 @@ setInterval(() => {
         document.removeEventListener('click', musicPlay);
     }
     
-    let faudio = new Audio('vzlom.MP3')
+    var faudio = new Audio('vzlom.MP3')
     
     faudio.addEventListener('timeupdate', function() {
         console.log('TimeUpdate invoked.');
@@ -42,11 +42,11 @@ setInterval(() => {
         }
     }
     
-    let xOff = 5;
-    let yOff = 5;
-    let xPos = 400;
-    let yPos = -100;
-    let flagRun = 1;
+    var xOff = 5;
+    var yOff = 5;
+    var xPos = 400;
+    var yPos = -100;
+    var flagRun = 1;
     
     function Ozgartirish(title) {
         document.title = title;
